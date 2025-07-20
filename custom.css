@@ -1,0 +1,197 @@
+/* Custom styles for the Minecraft Mod Analyzer */
+
+/* Theme transition smoothing */
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+#theme-icon {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover #theme-icon {
+    transform: rotate(15deg);
+}
+
+/* Light mode specific adjustments */
+[data-bs-theme="light"] .card.border-success {
+    background: linear-gradient(145deg, rgba(25, 135, 84, 0.08), rgba(25, 135, 84, 0.03));
+    border-color: #198754 !important;
+}
+
+[data-bs-theme="light"] .card.border-warning {
+    background: linear-gradient(145deg, rgba(255, 193, 7, 0.08), rgba(255, 193, 7, 0.03));
+    border-color: #ffc107 !important;
+}
+
+[data-bs-theme="light"] .card.border-danger {
+    background: linear-gradient(145deg, rgba(220, 53, 69, 0.08), rgba(220, 53, 69, 0.03));
+    border-color: #dc3545 !important;
+}
+
+[data-bs-theme="light"] #upload-area {
+    border-color: #dee2e6;
+    background-color: #f8f9fa;
+}
+
+[data-bs-theme="light"] #upload-area:hover {
+    border-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+[data-bs-theme="light"] .drag-over {
+    border-color: #0d6efd !important;
+    background-color: rgba(13, 110, 253, 0.15) !important;
+}
+
+.drag-over {
+    border-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary-bg-subtle) !important;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
+
+#upload-area {
+    border: 2px dashed var(--bs-border-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#upload-area:hover {
+    border-color: var(--bs-primary);
+    background-color: var(--bs-primary-bg-subtle);
+}
+
+.card {
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 1rem;
+}
+
+.badge {
+    font-size: 0.875rem !important;
+}
+
+/* Status-specific styles */
+.border-success {
+    border-width: 2px !important;
+}
+
+.border-warning {
+    border-width: 2px !important;
+}
+
+.border-danger {
+    border-width: 2px !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .card-body.py-5 {
+        padding: 2rem 1rem !important;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Animation for status icons */
+.fa-spin {
+    animation: fa-spin 2s infinite linear;
+}
+
+/* Custom tooltip styles */
+.tooltip {
+    font-size: 0.875rem;
+}
+
+/* File upload area improvements */
+#upload-area .card-body {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Results section improvements */
+#mod-results .card {
+    margin-bottom: 1rem;
+}
+
+/* Summary cards hover effect */
+.col-md-4 .card:hover {
+    transform: scale(1.05);
+}
+
+/* Progress bar animation */
+.progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position-x: 1rem;
+    }
+}
+
+/* Custom list styles */
+.list-unstyled li {
+    padding: 0.25rem 0;
+}
+
+/* Button improvements */
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Text improvements */
+.text-muted {
+    color: var(--bs-secondary) !important;
+}
+
+/* Card border improvements */
+.card.border-success {
+    background: linear-gradient(145deg, rgba(25, 135, 84, 0.1), rgba(25, 135, 84, 0.05));
+}
+
+.card.border-warning {
+    background: linear-gradient(145deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+}
+
+.card.border-danger {
+    background: linear-gradient(145deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+}

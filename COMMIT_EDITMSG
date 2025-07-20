@@ -1,0 +1,5 @@
+Implements parsing of `META-INF/mods.toml` and `mcmod.info` files to support NeoForge and legacy Forge mods in `static/js/mod-analyzer.js`, and creates a new `enhanced-mod-analyzer.js` file.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: a9e22701-7a79-4a5d-aa67-f33442427d91
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/4054458c-a634-4a43-992d-c6b7143e4e62/a9e22701-7a79-4a5d-aa67-f33442427d91/hXDCP30
